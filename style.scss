@@ -1,0 +1,53 @@
+$prime: rgb(0, 247, 255);
+$addcolor: rgb(1, 63, 50);
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: $prime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner {
+    width: 500px;
+    height: 300px;
+    background: rgb(1, 63, 50);
+    
+    &_block {
+      width: 450px;
+      height: 50px;
+      background: rgb(238, 255, 0);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px auto 0 auto;
+      &_text {
+        width: 200px;
+        height: 100%;
+        background: $prime;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_p {
+            font-size: 20px;
+            font-weight: 300;
+            text-decoration: none;
+            color: $addcolor;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+      &_title {
+        color: black;
+        margin-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        &:hover {
+            cursor: pointer;
+        }
+      }
+    }
+  }
+
